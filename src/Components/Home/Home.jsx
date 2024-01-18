@@ -24,7 +24,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-lg-5 col-sm-12 col-md-6">
-                            <img src="/assets/img/profile-img.png" style={{ width: '550px', zIndex: '9999', position: "relative" }} alt="" />
+                            {/* <img src="/assets/img/profile-img.png" style={{ width: '550px', zIndex: '9999', position: "relative" }} alt="" /> */}
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <div className="">

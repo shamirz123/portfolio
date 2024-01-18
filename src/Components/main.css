@@ -212,7 +212,8 @@ nav {
     bottom: 0;
   }
 }
-.introduction-section {
+.introduction-section,
+.About-us-Section {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
 }
