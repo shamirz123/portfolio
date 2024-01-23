@@ -8,8 +8,8 @@ function Home() {
         <>
             <Navbar />
 
-            <div className="container">
-                <section className='introduction-section mb-3'>
+            <div className="containerrr">
+                <section className='introduction-section'>
                     <div className='row'>
                         <div className="col-lg-4 col-sm-12 col-md-12">
                             <h3 className='animated-text'>Hello, i'm</h3>
@@ -44,6 +44,7 @@ function Home() {
                     </div>
                 </section>
             </div>
+            <div className='' style={{height:"10px"}}></div>
             <section className='About-us-Section'>
                 <About />
             </section>

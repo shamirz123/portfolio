@@ -8,7 +8,7 @@ function Navbar() {
         setHamburgerActive(!isHamburgerActive);
     };
     return (
-        <header>
+        <header className='navbar-header'>
             <div className="container">
                 <nav>
                     <a className="navbar-brand" href="#">

@@ -9,7 +9,7 @@ function About() {
     return (
         <>
             <div className="container">
-                <div className='about-me'>
+                <div className='about-me '>
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-13">
                             <h3>About Me</h3>

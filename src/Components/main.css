@@ -19,12 +19,15 @@ header {
   width: 100%;
   background-color: var(--color4);
 }
+.navbar-header {
+  /* position: absolute; */
+}
 
-.container {
-  width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+.containerrr{
+  width: 100% !important;
+  max-width: 120rem !important;
+  margin: 0 auto !important;
+  padding: 0 1.5rem !important;
 }
 
 nav {
@@ -212,10 +215,13 @@ nav {
     bottom: 0;
   }
 }
-.introduction-section,
-.About-us-Section {
+.introduction-section
+{
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
+  min-height: calc(100vh - 128px);
+  /* position: absolute !important; */
+  padding: 50px !important;
 }
 @keyframes fadeIn {
   from {
@@ -280,12 +286,12 @@ nav {
 }
 
 .experience-section {
-  background-color: #070707 !important;
+  background-color: #262626 !important;
   width: 300px;
   border-radius: 14px;
   padding: 40px;
   position: absolute;
-  z-index: 1000;
+  /* z-index: 1000; */
   /* margin-left: 140px; */
   margin-left: 40px !important;
 
@@ -319,11 +325,10 @@ nav {
 
 /* About-Section */
 .About-us-Section{
-  background-color: #070707 !important;
   margin-bottom: 20px !important;
+  background: #262626;
 }
 .about-me {
-  padding: 70px;
 
 }
 .about-me h3 {
@@ -364,7 +369,7 @@ nav {
   border-radius: 30px !important;
   width: 100%;
   padding: 20px;
-  z-index: 1000 !important;
+  /* z-index: 1000 !important; */
   position: relative;
 }
 .contact-me-detail img {
@@ -409,7 +414,7 @@ nav {
   color: #fff !important;
 }
 .contact-me-detil {
-  z-index: 1000;
-  position: relative;
+  /* z-index: 1000; */
+  position: absolute;
 }
 
