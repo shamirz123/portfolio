@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box !important;
 }
+body {
+  overflow-x:hidden ;
+}
 :root {
   --color-cursor: 220, 90, 90;
   --cursor-outline-shade: 0.3;
@@ -21,6 +24,9 @@ header {
 }
 .navbar-header {
   /* position: absolute; */
+}
+nav img {
+  width: 200px !important;
 }
 
 .containerrr{
@@ -67,6 +73,11 @@ nav {
   text-transform: capitalize;
   transform: scale(0);
   transition: transform 650ms;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: #fff;
+  
 }
 
 .nav-item {
@@ -221,7 +232,6 @@ nav {
   animation: fadeIn 1.5s ease-in-out forwards;
   min-height: calc(100vh - 128px);
   /* position: absolute !important; */
-  padding: 50px !important;
 }
 @keyframes fadeIn {
   from {
@@ -234,6 +244,7 @@ nav {
 .introduction-section h1 {
   color: #C9F31D !important;
   font-size: 50px;
+  display: inline-block;
 }
 
 .introduction-section h3 {
@@ -252,6 +263,9 @@ nav {
   font-weight: 600 !important;
   font-size: 13px !important;
   margin-top: 20px !important;
+}
+.hireme-btn {
+  margin-top: 75px !important;
 }
 
 .introduction-section .hireme-btn button {
@@ -321,16 +335,19 @@ nav {
     transform: translateY(0);
   }
 }
+#code-block {
+  padding: 50px !important;
+}
+
 
 
 /* About-Section */
 .About-us-Section{
-  margin-bottom: 20px !important;
   background: #262626;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
-.about-me {
 
-}
 .about-me h3 {
   color: #656565 !important;
   font-size: 20px;
@@ -417,4 +434,283 @@ nav {
   /* z-index: 1000; */
   position: absolute;
 }
+.about-exp .dot-shape {
+  animation: rotate 5s linear infinite;
+}
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.services-section {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  background: #070707;
+  padding-bottom: 50px !important;
+}
+
+/* About eND */
+
+/* Services Section  */
+.services-main p {
+  color: #656565 !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+.services-main h1{
+  color: #fff;
+}
+.services-main span{
+  color: #C9F31D;
+}
+.details-btn {
+  width: 50px;
+  height: 50px;
+  background: #131313;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  transform: rotate(-45deg);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.7s ease;
+}
+.details-btn:hover {
+ background: #C9F31D;
+ color: #070707;
+}
+.services-detail {
+  background: #262626;
+  border-radius: 30px !important;
+  padding: 20px !important;
+  margin-top: 50px;
+  border: 1px solid #474646;
+  transition: border 0.5s ease;
+ 
+}
+.services-detail:hover {
+  border: 1px solid #C9F31D;
+}
+
+.services-detail span {
+  font-size: 40px;
+}
+.services-detail h4 {
+  color: #fff !important;
+  margin-top: 20px;
+}
+.services-detail p {
+  color: #fff !important;
+  font-weight: normal;
+  font-size: 15px !important;
+  width: 26rem;
+  margin-top: 20px;
+}
+.services-detail:hover .details-btn {
+  background-color: #C9F31D; 
+  color: #070707;
+}
+
+/* Services Section End  */
+
+
+/* skill-section */
+
+.skill-section {
+  background: #262626 !important;
+}
+.skill-wrapper {
+  padding: 30px;
+}
+.skill-wrapper h4 {
+  color: #9EA6A8 !important;
+  font-family: 600;
+}
+.skill-wrapper h1 {
+  color: #FFf;
+}
+.skill-wrapper p {
+  color: #a19d9d;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: justify;
+  
+}
+.skill-wrapper span {
+  color: #C9F31D !important;
+}
+.language-section {
+  background: #3b3b3b;
+  padding: 30px ;
+  width: 140px;
+  border: 1px solid #585555;
+  border-radius: 10px !important;
+  transition: border  0.3s ease;
+  min-height: 200px;
+  
+}
+.language-section img {
+  width: 40px !important;
+}
+.language-section button {
+ width: 100px;
+ margin-left: -10px;
+ background: #070707;
+ color: #FFf;
+ font-weight: 600;
+ border: none;
+ outline: none;
+ border-radius: 7px;
+ padding: 5px ;
+ margin-bottom: 5px;
+ transition: background-color 0.3s ease;
+}
+.language-section:hover {
+  border: 1px solid #C9F31D;
+}
+
+.language-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.language-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease; 
+  z-index: -1; 
+}
+
+.language-section:hover::before {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-section:hover button {
+  background-color: #C9F31D;
+  color: #070707;
+}
+
+
+/* skill-section End */ 
+
+/* Testimonial-section */
+.testimonial-section {
+  background: #070707;
+  padding-bottom: 60px !important;
+}
+
+.product-item h4 {
+  color: #C9F31D;
+}
+.product-item p {
+  width: 15rem;
+  padding-top: 20px;
+  text-align: justify;
+  color: #a3a1a1;
+}
+.client-testimonial p {
+  color: #959D9E;
+  font-weight: 600;
+  font-size: 17px !important;
+}
+.client-testimonial h1 {
+  color: #fff;
+  font-size: 55px;
+}
+.client-testimonial h1 span {
+  color: #C9F31D;
+}
+.product-item {
+  padding: 20px;
+  transition: background-color 0.4s;
+}
+.product-item:hover {
+  background-color: #1a1919 !important;
+  border: 1px solid #656565;
+  border-radius: 12px !important;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: #C9F31D;
+}
+.p-carousel-indicators {
+  margin-top: 20px !important;
+  margin-left: -40px !important;
+  display: none;
+}
+.p-carousel-prev {
+  position: absolute;
+  left: -40px;
+}
+.p-carousel-next {
+  position: absolute;
+  right: 7px; 
+}
+.p-carousel-prev:hover {
+  background-color: #C9F31D !important;
+  border-radius: 10px !important;
+  
+}
+.p-carousel-next:hover {
+  background-color: #C9F31D !important;
+  border-radius: 10px !important;
+  
+}
+
+/* Testimonial Section End */
+
+/* Project section */
+
+.project-sections {
+  background: #262626;
+  padding-bottom: 40px;
+}
+
+.project-section-wrapper h6 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 24px;
+  color: #a19e9e;
+}
+.project-section-wrapper h1 {
+  text-align: center;
+  color: #fff;
+}
+.project-section-wrapper span {
+  color: #C9F31D;
+}
+.project-details{
+  margin-top: 80px !important;
+  padding-top: 70px !important;
+  padding-left: 40px;
+  
+}
+.project-details h5 {
+  color: #C9F31D;
+  margin-bottom: 20px !important;
+}
+.project-details h1 {
+  color: #fff;
+  text-align: start !important;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.project-details h1:hover {
+  color: #C9F31D;
+  text-align: start !important;
+}
+.project-details p {
+  color: #a39e9e;
+  width: 20rem;
+  font-size: 17px;
+}
