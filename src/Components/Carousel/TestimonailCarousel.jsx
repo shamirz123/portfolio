@@ -3,9 +3,9 @@ import { Carousel } from 'primereact/carousel';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import image1 from '../../../public/assets/img/Testimonial/author1.png';
-import image2 from '../../../public/assets/img/Testimonial/author2.png';
-import image3 from '../../../public/assets/img/Testimonial/author1.png';
+import image1 from '/assets/img/Testimonial/author1.png';
+import image2 from '/assets/img/Testimonial/author2.png';
+import image3 from '/assets/img/Testimonial/author1.png';
 
 const TestimonialCarousel = () => {
     const products = [

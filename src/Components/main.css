@@ -22,9 +22,7 @@ header {
   width: 100%;
   background-color: var(--color4);
 }
-.navbar-header {
-  /* position: absolute; */
-}
+
 nav img {
   width: 200px !important;
 }
@@ -713,4 +711,85 @@ nav {
   color: #a39e9e;
   width: 20rem;
   font-size: 17px;
+  text-align: justify;
+}
+.price-section {
+  background: #070707;
+  padding: 40px;
+}
+.price-wrapper h5 {
+  color: #656565;
+  margin-top: 40px;
+}
+.price-wrapper h1 {
+  color: #FFF;
+}
+.price-wrapper span {
+  color: #C9F31D;
+}
+.pricing-detail p {
+  color: #636363 !important;
+  font-weight: 600;
+  font-size: 17px;
+}
+.pricing-container {
+  background: #1F1F1F;
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 12px;
+}
+.pricing-detail {
+  background: #131313;
+  border-radius: 13px;
+  padding: 20px;
+}
+.pricing-detail strong {
+  color: #FFF;
+}
+.pricing-detail h2 {
+  color: #fff !important;
+
+}
+.pricing-detail h2 {
+  color: #C9F31D !important;
+  margin-top: 30px;
+}
+.pricing-detail span {
+  color: #9F9F9F !important;
+  font-size: 17px !important;
+}
+.services-provided {
+  display: flex;
+  padding: 30px;
+  margin-top: 20px;
+}
+.services-provided span {
+  font-size: 20px;
+}
+.services-provided h3 {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-left: 10px;
+  color: #FFF;
+}
+.pricing-container button {
+  border-radius: 10px;
+  background: #363636;
+  color: #FFF;
+  width: 190px;
+  height: 45px;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+.pricing-container:hover button {
+background-color: #C9F31D !important;
+color: #070707;
+}
+.services-provided p {
+  color: #585555 !important;
+  font-size: 23px;
 }

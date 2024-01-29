@@ -9,7 +9,7 @@ function Project() {
                 <h1>Explore My Popular <span>Projects</span></h1>
 
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12 project-image wow fadeInLeft delay-0-2s">
                         <img src="/assets/img/mobile.png" className='mt-5' alt="" />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">

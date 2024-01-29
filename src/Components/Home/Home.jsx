@@ -7,6 +7,7 @@ import Services from '../Servics/Services';
 import Skill from '../Skills/Skill';
 import Testimonial from '../Testimonial/Testimonial';
 import Project from '../Projects/Project';
+import Pricing from '../Pricing/Pricing';
 function Home() {
     const Shahmeer = {
         developer: true,
@@ -99,6 +100,9 @@ function Home() {
             </section>
             <section className='project-sections' id='projects'> 
                 <Project/>
+            </section>
+            <section className='price-section'>
+                <Pricing/>
             </section>
 
         </>
