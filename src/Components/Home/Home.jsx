@@ -8,13 +8,11 @@ import Skill from '../Skills/Skill';
 import Testimonial from '../Testimonial/Testimonial';
 import Project from '../Projects/Project';
 import Pricing from '../Pricing/Pricing';
+import Contactform from '../ContactForm/Contactform';
+import resumePDF from '/assets/img/resume.pdf'; 
+
 function Home() {
-    const Shahmeer = {
-        developer: true,
-        creator: true,
-        companies: ['vercel', 'github', 'mlh'],
-        technologies: ['js', 'react', 'node',],
-    };
+   
     const [text, setText] = useState('');
 
     useEffect(() => {
@@ -28,10 +26,18 @@ function Home() {
             if (currentIndex > originalText.length) {
                 clearInterval(intervalId);
             }
-        }, 150); // Adjust the typing speed as needed
+        }, 150); 
 
         return () => clearInterval(intervalId);
     }, []);
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = resumePDF;
+        link.download = 'resume.pdf'; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
 
 
     return (
@@ -51,7 +57,7 @@ function Home() {
                             <p>As a web developer, I am driven by a passion for creating innovative and user-friendly digital experiences. With a keen eye for detail and a commitment to excellence, I transform ideas into well-crafted, responsive websites that leave a lasting impression.</p>
                             <div className="hireme-btn">
                                 <button>Hire me</button>
-                                <button className='resume-btn'>
+                                <button className='resume-btn' onClick={handleDownload}>
                                     <u>Download resume</u> <i className="icon"><MdNavigateNext /></i>
                                 </button>
                             </div>
@@ -59,26 +65,8 @@ function Home() {
                           
                         </div>
                         <div className="col-lg-6 col-sm-12 col-md-6">
-                            {/* <div id="code-block" className="p-8 text-xl bg-[#282c34] rounded-md ">
-                                <div className="fade-in" id="fade1">
-                                    <pre className="astro-code one-dark-pro" style={{ backgroundColor: '#282c34', overflowX: 'auto', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }} tabIndex="0">
-                                        <code>
-                                            {Object.entries(Shahmeer).map(([key, value]) => (
-                                                <span key={key} className="line">
-                                                    <span style={{ color: '#C678DD' }}>const&#123;</span>
-                                                    <span style={{ color: '#ABB2BF' }}> </span>
-                                                    <span style={{ color: '#E5C07B' }}>{key}</span>
-                                                    <span style={{ color: '#ABB2BF' }}> </span>
-                                                    <span style={{ color: '#56B6C2' }}>=</span>
-                                                    <span style={{ color: '#ABB2BF' }}> {typeof value === 'string' ? `'${value}'` : JSON.stringify(value)}</span>
-                                                    <span style={{ color: '#ABB2BF' }}>,</span>
-                                                </span>
-                                            ))}
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div> */}
-                            <img src="/assets/img/coder.png" style={{ width: '550px', zIndex: '9999', position: "relative" }} alt="" />
+                           
+                            <img src="/assets/img/coder.png" style={{ width: '550px', zIndex: '9999', position: "relative", marginLeft:'50px' }} alt="" />
                         </div>
                       
                     </div>
@@ -103,6 +91,9 @@ function Home() {
             </section>
             <section className='price-section'>
                 <Pricing/>
+            </section>
+            <section className='contact-form-section'>
+                <Contactform/>
             </section>
 
         </>
