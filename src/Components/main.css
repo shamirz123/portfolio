@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background: #131313;
 }
 
 :root {
@@ -1022,5 +1023,112 @@ label {
 .contact-form textarea:focus {
   background: #070707;
   border: 1px solid #C9F31D;
+}
+
+
+/* footer section */
+
+.footer-section {
+  background: #070707 !important;
+}
+.footer-section-wrapper {
+  padding-top: 100px !important;
+  padding-bottom: 50px;
+}
+.quick-link h5 {
+  color: #FFF;
+}
+.quick-link ul li {
+  list-style: none;
+  color: #C9F31D;
+  margin-top: 20px !important;
+  font-size: 18px;
+  cursor: pointer;
+}
+.footer-contact  h5 {
+  color: #FFF;
+}
+.footer-contact span {
+  color: #C9F31D;
+  font-size: 26px !important;
+  margin-bottom: 30px;
+}
+.footer-contact p {
+  color: #FFF;
+  margin-top: 10px;
+}
+
+/* Footer End */
+
+/* Social-Link  */
+.social-link-section {
+  background: #131313;
+  
+
+}
+.cs_scrollup {
+  z-index: 111 !important;
+  
+}
+.upside-scroll-arrow {
+  color: var(--lighter-color);
+  font-size: 22px;
+  position: absolute;
+  top: -30px;
+  left: calc(20% - 30px);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 14px;
+  background: #C9F31D;
+  cursor: pointer;
+  animation: pluse 2s infinite !important;
+}
+
+.visible {
+  bottom: 23px !important;
+}
+.social-handle ul {
+  display: flex;
+  gap: 100px;
+  position: absolute;
+  right: 30px;
+  padding-bottom: 40px;
+}
+.social-handle ul li {
+  list-style: none;
+  font-size: 20px;
+  color: #9F9F9F;
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.cs_scrollup {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cs_scrollup.zoomed {
+  transform: scale(1.5); 
+}
+.copyright-section p {
+  color: #9F9F9F;
+  margin-top: 38px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+.copyright-section span {
+  color: #C9F31D;
+}
+
+@keyframes pluse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale3d(1.05,1.05,1.05);
+  }
 }
 

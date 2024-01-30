@@ -10,6 +10,8 @@ import Project from '../Projects/Project';
 import Pricing from '../Pricing/Pricing';
 import Contactform from '../ContactForm/Contactform';
 import resumePDF from '/assets/img/resume.pdf'; 
+import Footer from '../Footer/Footer';
+import Sociallinks from '../SocialLinks/Sociallinks';
 
 function Home() {
    
@@ -76,7 +78,7 @@ function Home() {
             <section className='About-us-Section'>
                 <About />
             </section>
-            <section className='services-section' id='section'>
+            <section className='services-section' id='services'>
                 <Services />
             </section>
 
@@ -89,12 +91,19 @@ function Home() {
             <section className='project-sections' id='projects'> 
                 <Project/>
             </section>
-            <section className='price-section'>
+            <section className='price-section' id='pricing'>
                 <Pricing/>
             </section>
             <section className='contact-form-section'>
                 <Contactform/>
             </section>
+            <section className='footer-section'>
+                <Footer/>
+            </section>
+            <section className='social-link-section'>
+            <Sociallinks/>
+            </section>
+            
 
         </>
     )

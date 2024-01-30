@@ -55,7 +55,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <ScrollLink
-                                to="section"
+                                to="services"
                                 smooth={true}
                                 duration={500}
                                 className="nav-link"
@@ -75,12 +75,12 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <ScrollLink
-                                to="testimonial"
+                                to="pricing"
                                 smooth={true}
                                 duration={500}
                                 className="nav-link"
                             >
-                                Reviews
+                                Pricing
                             </ScrollLink>
                         </li>
                         <li className="nav-item">
