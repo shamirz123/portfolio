@@ -2,10 +2,18 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { MdOutlineMail } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 
 
 function Footer() {
+    const whatsappProps = {
+        accountName:'Shahmeer Zubair',
+        phoneNumber:'+92 3115386005',
+        darkMode:true,
+        avatar:'/assets/img/profile.JPEG',
+        notification:true,
+    }
     return (
         <div>
             <div className="container">
@@ -53,9 +61,11 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                     
+
 
                     </div>
+                    <FloatingWhatsApp {...whatsappProps} />
+                   
                 </div>
             </div>
         </div>
