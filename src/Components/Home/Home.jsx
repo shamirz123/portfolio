@@ -74,7 +74,6 @@ function Home() {
                     </div>
                 </section>
             </div>
-            <div className='' style={{ height: "10px" }}></div>
             <section className='About-us-Section'>
                 <About />
             </section>
