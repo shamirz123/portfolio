@@ -35,11 +35,11 @@ function Sociallinks() {
                                 <a href="https://www.linkedin.com/in/shahmeer-zubair-3590a0273/" className='link-wrapper' target="_blank" rel="noopener noreferrer">
                                     <li>LinkedIn</li>
                                 </a>
-                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                    <li>Instagram</li>
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/shamir.zubair" target="_blank" rel="noopener noreferrer">
                                     <li>Facebook</li>
+                                </a>
+                                <a href="https://github.com/shamirz123" target="_blank" rel="noopener noreferrer">
+                                    <li>Github</li>
                                 </a>
                             </ul>
                         </div>

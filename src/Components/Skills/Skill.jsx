@@ -43,9 +43,9 @@ function Skill() {
                                 <div className="col-lg-3 col-sm-12 col-md-6">
                                     <div className="language-section">
                                         <div className='d-flex justify-content-center'>
-                                            <img src="/assets/img/js.png" alt="" />
+                                            <img src="/assets/img/js.png"   alt="" />
                                         </div>
-                                        <p className='text-center text-white fw-bold mt-2'>JS</p>
+                                        <p className='text-center text-white fw-bold mt-4 fs-5'>JS</p>
                                         <button>80%</button>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ function Skill() {
                                 <div className="col-lg-3 col-sm-12 col-md-6">
                                     <div className="language-section mt-3">
                                         <div className='d-flex justify-content-center'>
-                                            <img src="/assets/img/php.png" alt="" />
+                                            <img src="/assets/img/php.png" style={{width:'67px'}}  alt="" />
                                         </div>
                                         <p className='text-center text-white fw-bold mt-2'>PHP</p>
                                         <button>70%</button>
@@ -81,7 +81,7 @@ function Skill() {
                                 <div className="col-lg-3 col-sm-12 col-md-6">
                                     <div className="language-section mt-3">
                                         <div className='d-flex justify-content-center'>
-                                            <img src="/assets/img/figma.png" alt="" />
+                                            <img className='figma-img' style={{width:'32px'}} src="/assets/img/figma.png" alt="" />
                                         </div>
                                         <p className='text-center text-white fw-bold mt-0'>FIGMA</p>
                                         <button>67%</button>

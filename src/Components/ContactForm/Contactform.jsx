@@ -63,7 +63,7 @@ function Contactform() {
                                         <div className='input-with-icon' >
                                             <input
                                                 type="text"
-                                                placeholder="Shahmeer Zubair"
+                                                placeholder="Please enter your name"
                                             />
                                             <span className="icon">
                                                 <IoMdPerson />
