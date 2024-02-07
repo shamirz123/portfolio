@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { FaCheck } from "react-icons/fa6";
-import { Fade } from 'react-reveal';
 
 
 function Pricing() {
@@ -36,7 +35,7 @@ function Pricing() {
                     <h1 className='text-center'>Amazing <span>Pricing</span> For your Projects</h1>
                     <div className="row">
                         <div className="col-lg-4 col-md-8 col-sm-12">
-                            <Fade left>
+                           
                                 <div className="pricing-container">
                                     <div className="pricing-detail">
                                         <div className="container">
@@ -77,10 +76,10 @@ function Pricing() {
                                     </div>
                                     <button>Choose Package</button>
                                 </div>
-                            </Fade>
+                            
                         </div>
                         <div className="col-lg-4 col-md-8 col-sm-12">
-                            <Fade>
+                        
                                 <div className="pricing-container " style={{ paddingBottom: "20px" }}>
                                     <div className="pricing-detail">
                                         <div className="container">
@@ -121,11 +120,11 @@ function Pricing() {
                                     </div>
                                     <button className='mt-4'>Choose Package</button>
                                 </div>
-                            </Fade>
+                           
 
                         </div>
                         <div className="col-lg-4 col-md-8 col-sm-12">
-                            <Fade right>
+                            
                                 <div className="pricing-container">
                                     <div className="pricing-detail">
                                         <div className="container">
@@ -166,7 +165,7 @@ function Pricing() {
                                     </div>
                                     <button className='mt-4'>Choose Package</button>
                                 </div>
-                            </Fade>
+                          
 
                         </div>
                     </div>
