@@ -28,7 +28,7 @@ function Contactform() {
                                 <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis</p>
                             </div>
                             <div>
-                                <div className='experience-detail mt-5'>
+                                <div className='experience-detail mt-3'>
                                     <span>
                                         <FaCheck />
                                     </span>
@@ -56,9 +56,9 @@ function Contactform() {
 
                         </div>
                         <div className="col-lg-8 col-sm-12 col-md-12">
-                            <div className="row pt-5">
+                            <div className="row ">
                                 <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-5'>
+                                    <div className='mt-3'>
                                         <label>Full Name</label>
                                         <div className='input-with-icon' >
                                             <input
@@ -72,7 +72,7 @@ function Contactform() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-5'>
+                                    <div className='mt-3'>
                                         <label>Email Address</label>
                                         <div className='input-with-icon'>
                                             <input type="text"
@@ -85,7 +85,7 @@ function Contactform() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-5'>
+                                    <div className='mt-4'>
                                         <label>Phone Number</label>
                                         <div className='input-with-icon'>
                                             <input type="text"
@@ -98,7 +98,7 @@ function Contactform() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-5'>
+                                    <div className='mt-4'>
                                         <label>Subject</label>
                                         <div className='input-with-icon'>
                                             <input type="text"

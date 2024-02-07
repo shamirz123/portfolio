@@ -4,11 +4,6 @@
   box-sizing: border-box !important;
 }
 
-body {
-  overflow-x: hidden;
-  background: #131313;
-}
-
 :root {
   --color-cursor: 220, 90, 90;
   --cursor-outline-shade: 0.3;
@@ -233,8 +228,6 @@ nav {
 .introduction-section {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
-  min-height: calc(100vh - 128px);
-  /* position: absolute !important; */
 }
 
 @keyframes fadeIn {
@@ -251,11 +244,42 @@ nav {
   color: #C9F31D !important;
   font-size: 50px;
   display: inline-block;
+  position: relative;
+  font-weight: bold !important;
+  font-family: "Anonymous Pro", monospace !important;
+  letter-spacing: 7px !important;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+  margin-top: 7px !important;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 610px;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .introduction-section h3 {
   color: #656565 !important;
-  font-size: 47px;
+  font-size: 35px;
+  text-shadow: 0 0 7px rgba(255, 255, 255, .1), 0 0 3px rgba(255, 255, 255, .1);
 }
 
 .introduction-section h4 {
@@ -301,9 +325,7 @@ nav {
 .resume-btn:hover .icon {
   font-size: 14px !important;
   transform: translateX(-5px);
-  /* Adjust the value as needed */
   transition: transform 0.8s ease;
-  /* Add a smooth transition effect */
 }
 
 .experience-section {
@@ -312,8 +334,6 @@ nav {
   border-radius: 14px;
   padding: 40px;
   position: absolute;
-  /* z-index: 1000; */
-  /* margin-left: 140px; */
   margin-left: 40px !important;
 
 }
@@ -348,6 +368,12 @@ nav {
 }
 
 
+.Animation-text-wrapper {
+  color: #fff !important;
+  font-size: 35px !important;
+  font-weight: 600;
+}
+
 
 
 /* About-Section */
@@ -355,12 +381,17 @@ nav {
   background: #262626;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
+  padding-bottom: 40px !important;
+
 }
 
 .about-me h3 {
   color: #656565 !important;
   font-size: 20px;
-  margin-bottom: 10px;
+}
+
+.about-me :nth-child(2) img {
+  max-width: 779px !important;
 }
 
 .about-me h1 {
@@ -372,7 +403,7 @@ nav {
 }
 
 .about-me p {
-  color: #656565 !important;
+  color: #bbb9b9 !important;
   margin-top: 20px;
 }
 
@@ -479,7 +510,7 @@ nav {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   background: #070707;
-  padding-bottom: 50px !important;
+  padding: 60px !important;
 }
 
 /* About eND */
@@ -525,7 +556,9 @@ nav {
   margin-top: 50px;
   border: 1px solid #474646;
   transition: border 0.5s ease;
-
+  display: flex;
+  justify-content: center;
+  position: static;
 }
 
 .services-detail:hover {
@@ -542,7 +575,7 @@ nav {
 }
 
 .services-detail p {
-  color: #fff !important;
+  color: #bbb9b9 !important;
   font-weight: normal;
   font-size: 15px !important;
   width: 26rem;
@@ -561,6 +594,7 @@ nav {
 
 .skill-section {
   background: #262626 !important;
+  padding: 60px !important;
 }
 
 .skill-wrapper {
@@ -577,7 +611,7 @@ nav {
 }
 
 .skill-wrapper p {
-  color: #a19d9d;
+  color: #bbb9b9;
   margin-top: 5px;
   font-size: 13px;
   line-height: 30px;
@@ -601,7 +635,7 @@ nav {
 }
 
 .language-section img {
-  width: 40px ;
+  width: 40px;
 }
 
 .language-section button {
@@ -654,7 +688,7 @@ nav {
 /* Testimonial-section */
 .testimonial-section {
   background: #070707;
-  padding-bottom: 60px !important;
+  padding: 60px !important;
 }
 
 .product-item h4 {
@@ -665,11 +699,11 @@ nav {
   width: 15rem;
   padding-top: 20px;
   text-align: justify;
-  color: #a3a1a1;
+  color: #bbb9b9;
 }
 
 .client-testimonial p {
-  color: #959D9E;
+  color: #bbb9b9;
   font-weight: 600;
   font-size: 17px !important;
 }
@@ -732,12 +766,11 @@ nav {
 
 .project-sections {
   background: #262626;
-  padding-bottom: 40px;
+  padding: 60px !important;
 }
 
 .project-section-wrapper h6 {
   text-align: center;
-  padding-top: 40px;
   font-size: 24px;
   color: #a19e9e;
 }
@@ -776,7 +809,7 @@ nav {
 }
 
 .project-details p {
-  color: #a39e9e;
+  color: #bbb9b9;
   width: 20rem;
   font-size: 17px;
   text-align: justify;
@@ -784,13 +817,12 @@ nav {
 
 .price-section {
   background: #070707;
-  padding: 40px;
-  padding-bottom: 65px !important;
+  padding: 60px;
+
 }
 
 .price-wrapper h5 {
   color: #656565;
-  margin-top: 40px;
 }
 
 .price-wrapper h1 {
@@ -813,6 +845,8 @@ nav {
   margin-top: 60px;
   border-radius: 12px;
 }
+
+
 
 .pricing-detail {
   background: #131313;
@@ -882,13 +916,12 @@ nav {
 
 .contact-form-section {
   background: #131313;
-  padding-bottom: 50px !important;
+  padding: 60px;
 }
 
 .contact-form-detail h5 {
   color: #585555;
-  padding-top: 40px !important;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .contact-form-detail h1 {
@@ -901,7 +934,7 @@ nav {
 }
 
 .contact-form-detail p {
-  color: #9EA6A8;
+  color: #bbb9b9;
 }
 
 .experience-detail {
@@ -942,7 +975,7 @@ nav {
   outline: none;
   color: #FFF;
   background: #1F1F1F;
-  transition: background-color 0.3s, color 0.3s, placeholder-color 0.3s;  
+  transition: background-color 0.3s, color 0.3s, placeholder-color 0.3s;
 }
 
 .input-with-icon input::placeholder {
@@ -970,12 +1003,13 @@ label {
 
 .contact-form textarea {
   width: 100%;
+  color: #FFF;
   padding: 0px 20px 100px;
   background: #1F1F1F;
   border-radius: 10px;
   border: none;
   outline: none;
-  transition: background-color 0.3s, color 0.3s, placeholder-color 0.3s;  
+  transition: background-color 0.3s, color 0.3s, placeholder-color 0.3s;
 }
 
 .contact-form textarea::placeholder {
@@ -1002,9 +1036,10 @@ label {
   font-weight: 700;
   margin-top: 40px;
 }
+
 .button-with-icon {
   position: relative;
-  padding-right: 25px; 
+  padding-right: 25px;
 }
 
 
@@ -1012,15 +1047,17 @@ label {
   position: absolute;
   top: 47%;
   font-size: 700;
-  right: 20px; 
+  right: 20px;
   font-size: 20px;
   transform: translateY(-50%);
 }
+
 .input-with-icon input:focus {
   background: #070707;
   color: #fff;
   border: 1px solid #C9F31D;
 }
+
 .contact-form textarea:focus {
   background: #070707;
   border: 1px solid #C9F31D;
@@ -1032,13 +1069,16 @@ label {
 .footer-section {
   background: #070707 !important;
 }
+
 .footer-section-wrapper {
   padding-top: 100px !important;
   padding-bottom: 50px;
 }
+
 .quick-link h5 {
   color: #FFF;
 }
+
 .quick-link ul li {
   list-style: none;
   color: #C9F31D;
@@ -1046,14 +1086,17 @@ label {
   font-size: 18px;
   cursor: pointer;
 }
-.footer-contact  h5 {
+
+.footer-contact h5 {
   color: #FFF;
 }
+
 .footer-contact span {
   color: #C9F31D;
   font-size: 26px !important;
   margin-bottom: 30px;
 }
+
 .footer-contact p {
   color: #FFF;
   margin-top: 10px;
@@ -1064,13 +1107,14 @@ label {
 /* Social-Link  */
 .social-link-section {
   background: #131313;
-  
+
 
 }
 .cs_scrollup {
   z-index: 111 !important;
-  
+
 }
+
 .upside-scroll-arrow {
   color: var(--lighter-color);
   font-size: 22px;
@@ -1090,6 +1134,7 @@ label {
 .visible {
   bottom: 23px !important;
 }
+
 .social-handle ul {
   display: flex;
   gap: 100px;
@@ -1097,6 +1142,7 @@ label {
   right: 30px;
   padding-bottom: 40px;
 }
+
 .social-handle ul li {
   list-style: none;
   font-size: 20px;
@@ -1111,8 +1157,9 @@ label {
 }
 
 .cs_scrollup.zoomed {
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
+
 .copyright-section p {
   color: #9F9F9F;
   margin-top: 38px;
@@ -1120,6 +1167,7 @@ label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   cursor: pointer;
 }
+
 .copyright-section span {
   color: #C9F31D;
 }
@@ -1128,8 +1176,8 @@ label {
   0% {
     transform: scale(1);
   }
+
   50% {
-    transform: scale3d(1.05,1.05,1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
   }
 }
-

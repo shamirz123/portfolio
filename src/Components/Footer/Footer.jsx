@@ -8,11 +8,11 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 function Footer() {
     const whatsappProps = {
-        accountName:'Shahmeer Zubair',
-        phoneNumber:'+92 3115386005',
-        darkMode:true,
-        avatar:'/assets/img/profile.JPEG',
-        notification:true,
+        accountName: 'Shahmeer Zubair',
+        phoneNumber: '+92 3115386005',
+        darkMode: true,
+        avatar: '/assets/img/profile.JPEG',
+        notification: true,
     }
     return (
         <div>
@@ -65,7 +65,7 @@ function Footer() {
 
                     </div>
                     <FloatingWhatsApp {...whatsappProps} />
-                   
+
                 </div>
             </div>
         </div>
