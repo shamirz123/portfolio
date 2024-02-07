@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box !important;
 }
+body {
+  background-color: #262626;
+}
 
 :root {
   --color-cursor: 220, 90, 90;
