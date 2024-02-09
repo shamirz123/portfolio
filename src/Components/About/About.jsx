@@ -36,7 +36,7 @@ function About() {
 
                                 {/* <div className='about-exp d-flex'>
                                     <p><span><TiTick /></span>Web Development</p>
-                                    <p className='ml-5 pl-5'><span><TiTick /></span>Detail-Oriented:</p>
+                                    <p className='pl-5'><span><TiTick /></span>Detail-Oriented:</p>
                                 </div>
                                 <div className='about-exp d-flex'>
                                     <p><span><TiTick /></span>Client Satisfaction:</p>
@@ -44,7 +44,7 @@ function About() {
                                     <div class="dot-shape ml-5 pl-5"><img src="assets/img/about-dot.png" alt="Shape"/></div>
                                 </div> */}
                                 <div className="contact-me-detil">
-                                    <div className="about-info-box mt-5 wow fadeInUp delay-0-2s" style={{ visibility: 'visible' }}>
+                                    <div className="about-info-box " style={{ visibility: 'visible' }}>
                                         <div className="info-box-item">
                                             <div className="icon">
 

@@ -777,7 +777,9 @@ nav {
   font-size: 24px;
   color: #a19e9e;
 }
-
+.project-section-wrapper img {
+  width: 100% !important;
+}
 .project-section-wrapper h1 {
   text-align: center;
   color: #fff;
