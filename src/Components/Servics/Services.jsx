@@ -13,7 +13,7 @@ function Services() {
                     </h1>
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div class="d-flex flex-row services-detail">
+                            <div class="d-flex services-detail">
                                 <div class="p-3"><span>01.</span></div>
                                 <div>
                                     <h4>Custom Website Development:</h4>
@@ -25,7 +25,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div class="d-flex flex-row services-detail">
+                            <div class="d-flex services-detail">
                                 <div class="p-3"><span>02.</span></div>
                                 <div>
                                     <h4>Mobile App Development:</h4>
@@ -37,7 +37,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div class="d-flex flex-row services-detail">
+                            <div class="d-flex  services-detail">
                                 <div class="p-3"><span>03.</span></div>
                                 <div>
                                     <h4>Performance Optimization:</h4>
@@ -49,7 +49,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div class="d-flex flex-row services-detail">
+                            <div class="d-flex  services-detail">
                                 <div class="p-3"><span>04.</span></div>
                                 <div>
                                     <h4>User Experience (UX) Design:</h4>
