@@ -394,7 +394,9 @@ nav {
 }
 
 .about-me :nth-child(2) img {
-  max-width: 779px !important;
+  /* max-width: 779px !important; */
+  width: 100% !important;
+  margin-top: 50px !important;
 }
 
 .about-me h1 {
@@ -457,7 +459,6 @@ nav {
 
 .about-info-box {
   display: flex;
-  flex-wrap: wrap;
   max-width: 580px;
   border-radius: 20px;
   padding: 16px 40px 2px;
@@ -777,7 +778,9 @@ nav {
   font-size: 24px;
   color: #a19e9e;
 }
-
+.project-section-wrapper img {
+  width: 100% !important;
+}
 .project-section-wrapper h1 {
   text-align: center;
   color: #fff;

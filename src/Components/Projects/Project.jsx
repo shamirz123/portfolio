@@ -4,7 +4,7 @@ function Project() {
   return (
     <>
         <div className="container">
-            <div className="project-section-wrapper">
+            <div className="about-info-box ">
                 <h6>Latest Work</h6>
                 <h1>Explore My Popular <span>Projects</span></h1>
 
