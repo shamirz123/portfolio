@@ -33,21 +33,10 @@ function About() {
                                     <div class="p-2"> <span><FaCheck  /></span></div>
                                     <div class="p-2"><p className='m-0'>Product Design:</p></div>
                                 </div>
-
-                                {/* <div className='about-exp d-flex'>
-                                    <p><span><TiTick /></span>Web Development</p>
-                                    <p className='pl-5'><span><TiTick /></span>Detail-Oriented:</p>
-                                </div>
-                                <div className='about-exp d-flex'>
-                                    <p><span><TiTick /></span>Client Satisfaction:</p>
-                                    <p className='ml-5 pl-5'><span><TiTick /></span>Product Design</p>
-                                    <div class="dot-shape ml-5 pl-5"><img src="assets/img/about-dot.png" alt="Shape"/></div>
-                                </div> */}
                                 <div className="contact-me-detil">
                                     <div className="about-info-box " style={{ visibility: 'visible' }}>
                                         <div className="info-box-item">
                                             <div className="icon">
-
                                                 <IoMailOutline />
                                             </div>
                                             <div className="content">

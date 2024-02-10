@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box !important;
 }
+
 body {
   background-color: #000000;
 }
@@ -377,6 +378,14 @@ nav {
   font-weight: 600;
 }
 
+.profile-image img {
+  width: 100% !important;
+  max-width: 500px !important;
+  z-index: 9999px;
+  position: relative;
+  margin-left: 50px;
+}
+
 
 
 /* About-Section */
@@ -454,9 +463,8 @@ nav {
 } */
 
 .about-info-box {
-  /* display: flex;
-  max-width: 580px; */
-  text-align: center;
+  display: flex;
+  max-width: 580px;
   border-radius: 20px;
   padding: 16px 27px 2px;
   background: #1F1F1F;
@@ -521,6 +529,7 @@ nav {
   color: #656565 !important;
   font-weight: 600;
   font-size: 20px;
+  /* width: 400px; */
 }
 
 .services-main h1 {
@@ -529,6 +538,10 @@ nav {
 
 .services-main span {
   color: #C9F31D;
+}
+
+.detail-btn-div {
+  padding: 24px;
 }
 
 .details-btn {
@@ -551,15 +564,13 @@ nav {
 }
 
 .services-detail {
+  padding: 20px !important;
   background: #262626;
   border-radius: 30px !important;
-  padding: 20px !important;
   margin-top: 50px;
   border: 1px solid #474646;
   transition: border 0.5s ease;
-  display: flex;
-  justify-content: center;
-  position: static;
+
 }
 
 .services-detail:hover {
@@ -572,20 +583,18 @@ nav {
 
 .services-detail h4 {
   color: #fff !important;
-  margin-top: 20px;
 }
 
 .services-detail p {
   color: #bbb9b9 !important;
   font-weight: normal;
   font-size: 15px !important;
-  width: 26rem;
-  margin-top: 20px;
 }
 
 .services-detail:hover .details-btn {
   background-color: #C9F31D;
   color: #070707;
+
 }
 
 /* Services Section End  */
@@ -764,22 +773,44 @@ nav {
 /* Testimonial Section End */
 
 /* Project section */
+.project-info-box img {
+  width: 100%;
+}
 
 .project-sections {
   background: #262626;
   padding: 60px !important;
 }
+
 .project-section-wrapper img {
-  width: 100% ;
+  width: 100%;
 }
+
+.project-info-box h6 {
+  color: #9EA6A8;
+  font-size: 20px;
+  text-align: center;
+}
+
+.project-info-box h1 {
+  text-align: center;
+  color: #FFF;
+}
+
+.project-info-box span {
+  color: #C9F31D;
+}
+
 .project-section-wrapper h6 {
   text-align: center;
   font-size: 24px;
   color: #a19e9e;
 }
+
 .project-section-wrapper img {
   width: 100% !important;
 }
+
 .project-section-wrapper h1 {
   text-align: center;
   color: #fff;
@@ -1115,6 +1146,7 @@ label {
 
 
 }
+
 .cs_scrollup {
   z-index: 111 !important;
 
@@ -1199,13 +1231,23 @@ label {
 
 @media (max-width: 768px) {
 
+  /* intro section */
+
+    .profile-image img {
+      margin: 0px !important;
+    }
+
+  /* intro section end */
+
   /* About Us section */
   .About-us-Section {
     padding: 10px;
   }
+
   .about-exp span {
     font-size: 14px;
   }
+
   .about-exp p {
     font-size: 12px;
     font-weight: 500 !important;
@@ -1222,9 +1264,11 @@ label {
   .services-main h1 {
     font-size: 25px !important;
   }
+
   .services-main h2 {
     font-style: 17px !important;
   }
+
   /* services-section end */
 
 
@@ -1250,11 +1294,13 @@ label {
     gap: 10px;
     display: flex;
   }
+
   .p-carousel-next {
     position: relative;
     left: auto;
     right: auto;
   }
+
   .p-carousel-prev {
     position: relative;
     left: auto;
@@ -1268,11 +1314,13 @@ label {
   .project-sections {
     padding: 10px !important;
   }
+
   .project-details {
     margin: 0px !important;
     padding-top: 30px !important;
     padding-left: 10px !important;
   }
+
   /* project-sections ends */
 
   /* price-section */
@@ -1281,6 +1329,7 @@ label {
     padding: 10px !important;
     padding-bottom: 30px !important;
   }
+
   .price-wrapper h5 {
     margin-top: 30px;
   }
@@ -1294,7 +1343,7 @@ label {
     padding-bottom: 30px !important;
   }
 
- 
+
 
   /* contact-form-section ends */
 
@@ -1304,6 +1353,7 @@ label {
   .nav-list {
     bottom: 0px !important;
   }
+
   .social-handle ul {
     display: flex;
     gap: 30px;
@@ -1312,7 +1362,7 @@ label {
     right: 30px;
     padding-bottom: 40px;
   }
-  
+
 
 
   /* Footer section end */

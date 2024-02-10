@@ -57,16 +57,30 @@ function Main() {
                                 />
 
                                 <p>As a web developer, I am driven by a passion for creating innovative and user-friendly digital experiences. With a keen eye for detail and a commitment to excellence, I transform ideas into well-crafted, responsive websites that leave a lasting impression.</p>
-                                <div className="hireme-btn">
+
+                                <div class="d-flex hireme-btn">
+                                    <div class="p-2">
+                                        <button>Hire me</button>
+                                    </div>
+                                    <div class="p-2 ">
+                                        <button className='resume-btn' onClick={handleDownload}>
+                                            <u>Download resume</u> <i className="icon"><MdNavigateNext /></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                {/* <div className="hireme-btn">
                                     <button>Hire me</button>
                                     <button className='resume-btn' onClick={handleDownload}>
                                         <u>Download resume</u> <i className="icon"><MdNavigateNext /></i>
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-6 col-sm-12 col-md-6">
-                            <img src="/assets/img/coder.png" style={{ maxWidth: '500px', zIndex: '9999', position: "relative", marginLeft: '50px' }} alt="" />
+                            <div className='profile-image'>
+                                <img src="/assets/img/coder.png" alt="" />
+                            </div>
+
                         </div>
                     </div>
                 </section>
