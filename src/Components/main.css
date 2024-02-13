@@ -603,21 +603,24 @@ nav {
 /* skill-section */
 
 .skill-section {
-  background: #262626 !important;
+  background: #0F0E0E !important;
   padding: 60px !important;
+}
+.skill-wrapper :nth-child(1) img {
+  margin-top: 40px !important;
 }
 
 .skill-wrapper {
   padding: 30px;
 }
 
-.skill-wrapper h4 {
+.skill-wrapper h5 {
   color: #9EA6A8 !important;
   font-family: 600;
 }
 
 .skill-wrapper h1 {
-  color: #FFf;
+  color: #C9F31D;
 }
 
 .skill-wrapper p {
@@ -634,11 +637,11 @@ nav {
 }
 
 .language-section {
-  background: #3b3b3b;
+  background: #171717;
   padding: 30px;
   width: 140px;
   border: 1px solid #585555;
-  border-radius: 10px !important;
+  border-radius: 148px !important;
   transition: border 0.3s ease;
   min-height: 200px;
 
@@ -646,14 +649,18 @@ nav {
 
 .language-section img {
   width: 40px;
+  margin-top: 20px;
 }
 
 .language-section button {
   width: 100px;
   margin-left: -10px;
-  background: #070707;
+  margin-top: 10px;
+  padding-top: 30px;
+  background: none;
   color: #FFf;
   font-weight: 600;
+  font-size: 22px;
   border: none;
   outline: none;
   border-radius: 7px;
@@ -690,6 +697,13 @@ nav {
 .language-section:hover button {
   background-color: #C9F31D;
   color: #070707;
+}
+
+
+.skills-arrow-img-section :nth-child(2) img {
+  padding-top: 150px !important;
+  margin-left: 90px;
+  margin-top: 100px !important;
 }
 
 
@@ -1276,6 +1290,9 @@ label {
 
   .skill-section {
     padding: 10px !important;
+  }
+  .skills-arrow-img-section img {
+    display: none !important;
   }
 
 
