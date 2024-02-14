@@ -15,7 +15,7 @@ function Sociallinks() {
             <div className="container">
                 <div className="footer-bottom "><div className="container"><div className="row">
                     <div className="col-lg-6">
-                        <div className="copyright-section"><p>Copyright @2024, <span >Noxfolio</span> All Rights Reserved</p></div>
+                        <div className="copyright-section"><p>Copyright <span> @2024</span>,  All Rights Reserved</p></div>
                     </div>
 
                     <div className="col-lg-6 text-lg-end"><ul className="footer-bottom-nav"><li><a href="https://github.com/shamirz123">Github</a></li>
