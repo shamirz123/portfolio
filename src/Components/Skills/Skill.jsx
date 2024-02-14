@@ -17,11 +17,11 @@ function Skill() {
 
                             {/* <img className='' src="/assets/img/skill-man.png" alt="" /> */}
 
-                            <div class="d-flex p-3 skills-arrow-img-section">
-                                <div class="">
+                            <div className="d-flex p-3 skills-arrow-img-section">
+                                <div className="">
                                     <img className='' src="/assets/img/skill-man.png" alt="" />
                                 </div>
-                                <div class="">
+                                <div className="">
                                     <img className='d-inline' src="/assets/img/skill-arrow.png" alt="" />
                                 </div>
                             </div>

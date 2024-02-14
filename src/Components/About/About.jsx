@@ -17,21 +17,21 @@ function About() {
                                 <h1>Crafting Effective Solutions for Digital Challenges in <span>Web Development</span> </h1>
                                 <p>Passionate web developer with a keen eye for detail. Transforming ideas into captivating digital experiences. Let's create something extraordinary together.</p>
 
-                                <div class="d-flex flex-row gap-3 about-exp">
-                                    <div class="p-2">
+                                <div className="d-flex flex-row gap-3 about-exp">
+                                    <div className="p-2">
                                         <span><FaCheck  /></span>
                                     </div>
-                                    <div class="p-2"><p className='m-0'>Web Development</p></div>
-                                    <div class="p-2"> <span><FaCheck  /></span></div>
-                                    <div class="p-2"><p className='m-0'>Detail-Oriented:</p></div>
+                                    <div className="p-2"><p className='m-0'>Web Development</p></div>
+                                    <div className="p-2"> <span><FaCheck  /></span></div>
+                                    <div className="p-2"><p className='m-0'>Detail-Oriented:</p></div>
                                 </div>
-                                <div class="d-flex flex-row gap-3 about-exp">
-                                    <div class="p-2">
+                                <div className="d-flex flex-row gap-3 about-exp">
+                                    <div className="p-2">
                                         <span><FaCheck  /></span>
                                     </div>
-                                    <div class="p-2"><p className='m-0'>Client Satisfaction</p></div>
-                                    <div class="p-2"> <span><FaCheck  /></span></div>
-                                    <div class="p-2"><p className='m-0'>Product Design:</p></div>
+                                    <div className="p-2"><p className='m-0'>Client Satisfaction</p></div>
+                                    <div className="p-2"> <span><FaCheck  /></span></div>
+                                    <div className="p-2"><p className='m-0'>Product Design:</p></div>
                                 </div>
                                 <div className="contact-me-detil">
                                     <div className="about-info-box " style={{ visibility: 'visible' }}>

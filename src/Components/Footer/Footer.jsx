@@ -26,8 +26,7 @@ function Footer() {
                             <div className="quick-link">
                                 <h5>Quick Link</h5>
                                 <div className=''>
-                                    <ul className='d-flex gap-5 pl-0'>
-
+                                    <ul className=''>
                                         <li>
                                             <Link to="services" smooth={true} duration={500}>Service</Link>
                                         </li>
@@ -64,7 +63,7 @@ function Footer() {
 
 
                     </div>
-                    <FloatingWhatsApp {...whatsappProps} />
+                    {/* <FloatingWhatsApp {...whatsappProps} /> */}
 
                 </div>
             </div>

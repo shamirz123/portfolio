@@ -13,41 +13,24 @@ function Sociallinks() {
     return (
         <>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-5 col-md-12 col-sm-12">
-                        <div className='copyright-section'>
-                        <p>Copyright <span>@2024</span> , All Rights Reserved</p>
-                        </div>
-                        
+                <div className="footer-bottom "><div className="container"><div className="row">
+                    <div className="col-lg-6">
+                        <div className="copyright-section"><p>Copyright @2024, <span >Noxfolio</span> All Rights Reserved</p></div>
                     </div>
-                    <div className="col-lg-5 col-md-12 col-sm-12">
-                        <span
-                            className={`cs_scrollup upside-scroll-arrow ${isvisible ? "visible" : ""
-                                }`}
-                            onClick={scrollToTop}
-                        >
-                            <i className='fas fa-angle-double-up'></i>
-                        </span>
-                    </div>
-                    <div className="col-lg-2 col-md-12 col-sm-12">
-                        <div className='social-handle'>
-                            <ul>
-                                <a href="https://www.linkedin.com/in/shahmeer-zubair-3590a0273/" className='link-wrapper' target="_blank" rel="noopener noreferrer">
-                                    <li>LinkedIn</li>
-                                </a>
-                                <a href="https://www.facebook.com/shamir.zubair" target="_blank" rel="noopener noreferrer">
-                                    <li>Facebook</li>
-                                </a>
-                                <a href="https://github.com/shamirz123" target="_blank" rel="noopener noreferrer">
-                                    <li>Github</li>
-                                </a>
-                            </ul>
-                        </div>
 
+                    <div className="col-lg-6 text-lg-end"><ul className="footer-bottom-nav"><li><a href="https://github.com/shamirz123">Github</a></li>
+                        <li><a href="https://www.facebook.com/shamir.zubair">Facebook</a></li>
+                        <li><a href="https://github.com/shamirz123">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/shahmeer-zubair-3590a0273/">LinkedIn</a></li>
+                    </ul>
                     </div>
                 </div>
-            </div>
+                    <a href="#" className="scroll-top scroll-to-target d-inline-block"><span className="fas fa-angle-double-up"></span>
+                    </a>
+                </div>
 
+                </div>
+            </div>
         </>
     )
 }
