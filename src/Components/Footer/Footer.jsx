@@ -63,7 +63,7 @@ function Footer() {
 
 
                     </div>
-                    {/* <FloatingWhatsApp {...whatsappProps} /> */}
+                    <FloatingWhatsApp {...whatsappProps} />
 
                 </div>
             </div>

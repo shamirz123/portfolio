@@ -1114,7 +1114,7 @@ label {
 
 .quick-link ul {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   padding-left: 0px !important;
 }
 
@@ -1241,7 +1241,12 @@ ul {
 @media (max-width: 768px) {
 
   /* intro section */
-
+  .hamburger {
+    display: none;
+  }
+  .nav-list.active {
+    display: none;
+  }
   .profile-image img {
     margin: 0px !important;
   }
