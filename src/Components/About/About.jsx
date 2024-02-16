@@ -42,7 +42,7 @@ function About() {
                                             <div className="content">
                                                 <span>Email Us</span>
                                                 <br />
-                                                <a href="mailto:support@gmail.com">rajashamir383@gmail.com</a>
+                                                <a href="mailto:support@gmail.com">shahmeerzubair299@gmail.com</a>
                                             </div>
                                         </div>
                                         <div className="info-box-item">
