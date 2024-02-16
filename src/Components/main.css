@@ -46,9 +46,9 @@ nav {
 
 .navbar-brand {
   background-color: var(--color2);
-  width: 6rem;
-  height: 6rem;
-  display: flex;
+  /* width: 6rem;
+  height: 6rem; */
+  /* display: flex; */
   border-radius: 50%;
 }
 
@@ -248,7 +248,7 @@ nav {
   }
 
   to {
-    width: 610px;
+    width: 100%;
   }
 }
 
@@ -1247,6 +1247,14 @@ ul {
   .nav-list.active {
     display: none;
   }
+  .navbar-header nav {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link {
+    display: none !important;
+  }
   .profile-image img {
     margin: 0px !important;
   }
@@ -1257,7 +1265,6 @@ ul {
 
   .introduction-section h1 {
     font-size: 26px !important;
-
   }
 
   /* intro section end */
