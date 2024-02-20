@@ -3,17 +3,14 @@ import { FaCheck } from "react-icons/fa6";
 import { IoMdPerson, IoMdCall } from "react-icons/io";
 import { MdOutlineMail, MdNavigateNext } from "react-icons/md";
 import { RxText } from "react-icons/rx";
+import { useForm, ValidationError } from '@formspree/react';
 
 function Contactform() {
-    const [focusedInput, setFocusedInput] = useState(null);
 
-    const handleInputFocus = (inputName) => {
-        setFocusedInput(inputName);
-    };
-
-    const handleInputBlur = () => {
-        setFocusedInput(null);
-    };
+    const [state, handleSubmit] = useForm("mwkgozgj");
+    if (state.succeeded) {
+        return <p className='form-alert-pra'>Your message is on its way to me! Expect a reply soon.</p>;
+    }
 
     return (
         <>
@@ -24,7 +21,7 @@ function Contactform() {
                             <div className="contact-form-detail">
                                 <h5>Get In Touch</h5>
                                 <h1>Let’s Talk For your</h1>
-                                <h2>Next Projects</h2>
+                                <h2>Website Projects</h2>
                                 <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis</p>
                             </div>
                             <div>
@@ -56,69 +53,122 @@ function Contactform() {
 
                         </div>
                         <div className="col-lg-8 col-sm-12 col-md-12">
-                            <div className="row ">
-                                <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-3'>
-                                        <label>Full Name</label>
-                                        <div className='input-with-icon' >
-                                            <input
-                                                type="text"
-                                                placeholder="Please enter your name"
-                                            />
-                                            <span className="icon">
-                                                <IoMdPerson />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-3'>
-                                        <label>Email Address</label>
-                                        <div className='input-with-icon'>
-                                            <input type="text"
-                                                placeholder="support@gmail.com"
-                                            />
-                                            <span className="icon">
-                                                <MdOutlineMail />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-4'>
-                                        <label>Phone Number</label>
-                                        <div className='input-with-icon'>
-                                            <input type="text"
-                                                placeholder="+92 3115386005"
-                                            />
-                                            <span className="icon">
-                                                <IoMdCall />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12 col-sm-12">
-                                    <div className='mt-4'>
-                                        <label>Subject</label>
-                                        <div className='input-with-icon'>
-                                            <input type="text"
-                                                placeholder="Subject"
-                                            />
-                                            <span className="icon">
-                                                <RxText />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='mt-4'>
-                                    <label>Message</label>
-                                    <div>
-                                        <textarea placeholder="write message" ></textarea>
-                                    </div>
-                                </div>
+                            <form onSubmit={handleSubmit}>
+                                <div className="row ">
+                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                        <div className='mt-3'>
+                                            <label htmlFor='name'>Full Name</label>
+                                            <div className='input-with-icon' >
+                                                <input
+                                                    id='name'
+                                                    type='name'
+                                                    name='name'
+                                                    placeholder="Please enter your name"
+                                                />
+                                                <ValidationError
+                                                    prefix="Name"
+                                                    field="name"
+                                                    errors={state.errors}
+                                                />
 
-                            </div>
-                            <button className="button-with-icon">Send Me Message <span className="arrow-icon"><MdNavigateNext /></span></button>
+                                                <span className="icon">
+                                                    <IoMdPerson />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                        <div className='mt-3'>
+                                            <label htmlFor='email'>Email Address</label>
+                                            <div className='input-with-icon'>
+
+                                                <input
+                                                    id='email'
+                                                    type='email'
+                                                    name='email'
+                                                    placeholder="support@gmail.com"
+                                                />
+                                                <ValidationError
+                                                    prefix="Email"
+                                                    field="email"
+                                                    errors={state.errors}
+                                                />
+
+                                                <span className="icon">
+                                                    <MdOutlineMail />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                        <div className='mt-4'>
+                                            <label htmlFor='number'>Phone Number</label>
+                                            <div className='input-with-icon'>
+                                                <input
+                                                    type="number"
+                                                    id='number'
+                                                    name='number'
+                                                    placeholder="+92 3115386005"
+                                                />
+                                                <ValidationError
+                                                    prefix="Number"
+                                                    field="number"
+                                                    errors={state.errors}
+                                                />
+
+                                                <span className="icon">
+                                                    <IoMdCall />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                        <div className='mt-4'>
+                                            <label htmlFor='subject'>Subject</label>
+                                            <div className='input-with-icon'>
+                                                <input
+                                                    type="text"
+                                                    name='subject'
+                                                    id='subject'
+                                                    placeholder="Subject"
+                                                />
+
+                                                <ValidationError
+                                                    prefix="Subject"
+                                                    field="subject"
+                                                    errors={state.errors}
+                                                />
+
+                                                <span className="icon">
+                                                    <RxText />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='mt-4'>
+                                        <label>Message</label>
+                                        <div>
+                                            <textarea
+                                                placeholder="write message"
+                                                id="message"
+                                                name="message"
+                                            ></textarea>
+                                            <ValidationError
+                                                prefix="Message"
+                                                field="message"
+                                                errors={state.errors}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    className="button-with-icon"
+                                    type="submit" disabled={state.submitting}
+                                >
+                                    Send Me Message
+                                    <span className="arrow-icon"><MdNavigateNext /></span></button>
+                            </form>
+
 
                         </div>
                     </div>

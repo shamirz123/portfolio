@@ -585,10 +585,6 @@ nav {
   padding: 60px !important;
 }
 
-.skill-wrapper :nth-child(1) img {
-  margin-top: 40px !important;
-}
-
 .skill-wrapper {
   padding: 30px;
 }
@@ -605,22 +601,29 @@ nav {
 .skill-wrapper p {
   color: #bbb9b9;
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 30px;
-  text-align: justify;
+  text-align: justify !important;
 
 }
 
 .skill-wrapper span {
   color: #C9F31D !important;
 }
+.skill-wrapper :nth-child(3) img  {
+  width: 40px !important;
+}
+.skill-wrapper :nth-child(4) img  {
+  width: 45px !important;
+  margin-top: 30px !important;
+}
 
 .language-section {
-  background: #171717;
-  padding: 30px;
+  background: #1F1F1F;
+  padding: 13px;
   width: 140px;
   border: 1px solid #585555;
-  border-radius: 148px !important;
+  border-radius: 10px !important;
   transition: border 0.3s ease;
   min-height: 200px;
 
@@ -631,15 +634,16 @@ nav {
   margin-top: 20px;
 }
 
+
 .language-section button {
   width: 100px;
-  margin-left: -10px;
-  margin-top: 10px;
-  padding-top: 30px;
+  margin-left: 10px;
+  margin-top: 0px !important;
+  padding-top: 13px;
   background: none;
   color: #FFf;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   border: none;
   outline: none;
   border-radius: 7px;
@@ -676,6 +680,10 @@ nav {
 .language-section:hover button {
   background-color: #C9F31D;
   color: #070707;
+}
+.language-section p {
+  text-align: center !important;
+  font-size: 14px !important ;
 }
 
 
@@ -946,6 +954,12 @@ nav {
 .contact-form-section {
   background: #131313;
   padding: 60px;
+}
+.form-alert-pra {
+  color: #C9F31D;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .contact-form-detail h5 {
