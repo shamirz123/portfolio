@@ -944,6 +944,7 @@ nav {
 .pricing-container:hover button {
   background-color: #C9F31D !important;
   color: #070707;
+  
 }
 
 .services-provided p {
@@ -1200,11 +1201,16 @@ label {
 .footer-bottom-nav li {
   margin: 0 22px 5px;
 }
+.footer-bottom-nav li a:hover {
+  color: #b4b4b4;
+}
 
 .footer-bottom-nav li a {
-  color: #696666;
+  color: #7e7e7e;
   font-weight: 600;
   font-size: 20px;
+  transition: color 0.8s;
+
 }
 
 li,
