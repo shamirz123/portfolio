@@ -21,7 +21,7 @@ function Skill() {
                         </div>
                         <div className="col-lg-8 col-sm-6 col-md-12">
                             <div className="row">
-                                <div className="col-lg-3 col-sm-6 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/html.png" alt="" />
@@ -30,7 +30,7 @@ function Skill() {
                                         <button>97%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/css.png" alt="" />
@@ -39,7 +39,7 @@ function Skill() {
                                         <button>88%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/bootstrap.png" alt="" />
@@ -48,7 +48,7 @@ function Skill() {
                                         <button className=''>85%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section mt-0">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/js.png" alt="" />
@@ -57,7 +57,7 @@ function Skill() {
                                         <button>80%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section mt-3">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/jquery.png" alt="" />
@@ -66,7 +66,7 @@ function Skill() {
                                         <button>80%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-md-6 ">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section mt-3">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/react.png" alt="" />
@@ -75,7 +75,7 @@ function Skill() {
                                         <button>90%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-6 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section mt-3">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/php.png" style={{ width: '67px' }} alt="" />
@@ -84,7 +84,7 @@ function Skill() {
                                         <button>70%</button>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-sm-12 col-md-6">
+                                <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
                                     <div className="language-section mt-3">
                                         <div className='d-flex justify-content-center'>
                                             <img className='figma-img' style={{ width: '32px' }} src="/assets/img/figma.png" alt="" />
