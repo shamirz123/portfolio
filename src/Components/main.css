@@ -1123,8 +1123,7 @@ label {
 }
 
 .footer-section-wrapper {
-  padding-top: 100px !important;
-  padding-bottom: 50px;
+padding:40px 10px 40px;
 }
 
 .quick-link h5 {
@@ -1342,6 +1341,9 @@ ul {
   .services-main h2 {
     font-style: 17px !important;
   }
+  .services-provided {
+    padding: 0px 0px 16px;
+  }
 
   /* services-section end */
 
@@ -1461,6 +1463,11 @@ ul {
   .copyright-section p {
     padding-top: 50px !important;
   }
+  
+.footer-section-wrapper {
+  padding:40px 10px 40px;
+  }
+  
 
   /* .social-handle ul {
     display: flex;
