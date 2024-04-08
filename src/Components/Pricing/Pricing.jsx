@@ -128,7 +128,7 @@ function Pricing() {
                                 <div className="pricing-container">
                                     <div className="pricing-detail">
                                         <div className="container">
-                                            <h2>Standard  <strong>Plan</strong></h2>
+                                            <h2>Premium  <strong>Plan</strong></h2>
                                             <p>Try Out Basic Plan Save <span>35%</span></p>
                                             <h2>$100 <span>/per month</span></h2>
                                         </div>
