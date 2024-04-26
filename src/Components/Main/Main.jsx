@@ -27,6 +27,11 @@ function Main() {
         document.body.removeChild(link);
     };
 
+    const handleScrollToContact = () => {
+        const contactForm = document.getElementById('contact-form');
+        contactForm.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <>
             <div className="container">
@@ -60,7 +65,7 @@ function Main() {
 
                                 <div className="d-flex hireme-btn">
                                     <div className="p-2">
-                                        <button>Hire me</button>
+                                        <button onClick={handleScrollToContact}>Hire me</button>
                                     </div>
                                     <div className="p-2 ">
                                         <button className='resume-btn' onClick={handleDownload}>

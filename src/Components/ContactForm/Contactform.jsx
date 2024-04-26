@@ -15,7 +15,7 @@ function Contactform() {
     return (
         <>
             <div className="container">
-                <div className="contact-form">
+                <div className="contact-form" id="contact-form">
                     <div className="row">
                         <div className="col-lg-4 col-md-8 col-sm-12">
                             <div className="contact-form-detail">
@@ -105,10 +105,10 @@ function Contactform() {
                                             <label htmlFor='number'>Phone Number</label>
                                             <div className='input-with-icon'>
                                                 <input
-                                                    type="number"
+                                                    type="text"
                                                     id='number'
                                                     name='number'
-                                                    placeholder="+92 3115386005"
+                                                    placeholder="+92"
                                                 />
                                                 <ValidationError
                                                     prefix="Number"
