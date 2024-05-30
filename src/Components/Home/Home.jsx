@@ -16,7 +16,6 @@ function Home() {
 
     return (
         <>
-            <Navbar />
             <section className='home-section'>
                 <Main/>
             </section>
@@ -39,7 +38,7 @@ function Home() {
             <section className='price-section' id='pricing'>
                 <Pricing />
             </section>
-            <section className='contact-form-section'>
+            <section className='contact-form-section' id='contact-us'>
                 <Contactform />
             </section>
             <section className='footer-section'>
