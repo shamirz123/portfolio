@@ -860,10 +860,11 @@ nav {
 
 @keyframes rotate3d {
   from {
-      transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
+
   to {
-      transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -892,12 +893,22 @@ nav {
 }
 
 .pricing-container {
+  margin: 7px;
   background: #1F1F1F;
   padding: 20px;
   margin-top: 60px;
   border-radius: 12px;
 }
 
+.pricing-container {
+  transition:  transform 0.6s ease-in-out;
+
+}
+
+.pricing-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 5px #252525;
+}
 
 
 .pricing-detail {

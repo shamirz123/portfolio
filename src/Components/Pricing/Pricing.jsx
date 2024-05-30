@@ -35,7 +35,7 @@ function Pricing() {
                     <h1 className='text-center'>Amazing <span>Pricing</span> For your Projects</h1>
                     <div className="row">
                         <div className="col-lg-4 col-md-8 col-sm-12">
-                            <div className="pricing-container">
+                            <div className="pricing-container first-card">
                                 <div className="pricing-detail">
                                     <div className="container">
                                         <h2>Basic <strong>Plan</strong></h2>
@@ -78,8 +78,7 @@ function Pricing() {
 
                         </div>
                         <div className="col-lg-4 col-md-8 col-sm-12">
-
-                            <div className="pricing-container " style={{ paddingBottom: "20px" }}>
+                            <div className="pricing-container  middle-card " style={{ paddingBottom: "20px" }}>
                                 <div className="pricing-detail">
                                     <div className="container">
                                         <h2>Standard  <strong>Plan</strong></h2>
@@ -124,7 +123,7 @@ function Pricing() {
                         </div>
                         <div className="col-lg-4 col-md-8 col-sm-12">
 
-                            <div className="pricing-container">
+                            <div className="pricing-container last-card">
                                 <div className="pricing-detail">
                                     <div className="container">
                                         <h2>Premium  <strong>Plan</strong></h2>
