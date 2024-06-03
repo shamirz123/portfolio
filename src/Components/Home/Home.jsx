@@ -11,6 +11,7 @@ import Contactform from '../ContactForm/Contactform';
 import Footer from '../Footer/Footer';
 import Sociallinks from '../SocialLinks/Sociallinks';
 import Main from '../Main/Main';
+import ProjectGallery from '../ProjectGallery/ProjectGallery';
 
 function Home() {
 
@@ -34,6 +35,9 @@ function Home() {
             </section>
             <section className='project-sections' id='projects'>
                 <Project />
+            </section>
+            <section className='project-gallery-section' id='projects-gallery'>
+                <ProjectGallery />
             </section>
             <section className='price-section' id='pricing'>
                 <Pricing />

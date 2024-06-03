@@ -31,7 +31,9 @@
     "react-scroll": "^1.9.0",
     "react-spring": "^9.7.3",
     "react-type-animation": "^3.2.0",
-    "react-whatsapp": "^0.3.0"
+    "react-whatsapp": "^0.3.0",
+    "scroll-out": "^2.2.12",
+    "splitting": "^1.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
