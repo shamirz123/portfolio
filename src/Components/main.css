@@ -1710,19 +1710,3 @@ ul {
     font-size: 12px;
   }
 }
-
-.progress-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 10px;
-  width: 100%;
-  background-color: #ccc;
-}
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 10px;
-  background-color: green;
-}
