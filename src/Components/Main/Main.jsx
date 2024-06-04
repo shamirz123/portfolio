@@ -35,7 +35,7 @@ function Main() {
     return (
         <>
             <div className="container">
-                <section className='introduction-section'>
+                <section className='introduction-section pb-4'>
                     <div className='row'>
                         <div className="col-lg-6 col-sm-12 col-md-12">
                             <div className='mt-5 pt-5'>
