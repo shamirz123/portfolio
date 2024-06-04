@@ -5,7 +5,7 @@ import "../main.css";
 function ProjectGallery() {
   return (
     <div className="container">
-      <section className="portfolio-section" id="portfolio">
+      <section className="portfolio-section js-scroll fade-in" id="portfolio">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12 text-center">

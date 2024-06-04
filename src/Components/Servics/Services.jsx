@@ -13,11 +13,11 @@ function Services() {
                     </h1>
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div className="p-3 services-detail ">
+                            <div className="p-3 services-detail js-scroll slide-left">
                                 <div className="p-2 ">
                                     <span>01.</span>
                                 </div>
-                                <div className="p-2 ">
+                                <div className="p-2  ">
                                     <h4>Custom Website Development:</h4>
                                     <p>Offer custom website development services tailored to the specific needs and goals of businesses.</p>
                                 </div>
@@ -27,7 +27,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                             <div className="p-3 services-detail ">
+                             <div className="p-3 services-detail js-scroll slide-right ">
                                 <div className="p-2 ">
                                     <span>02.</span>
                                 </div>
@@ -41,7 +41,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                             <div className="p-3 services-detail ">
+                             <div className="p-3 services-detail js-scroll slide-left">
                                 <div className="p-2 ">
                                     <span>03.</span>
                                 </div>
@@ -55,7 +55,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                             <div className="p-3 services-detail ">
+                             <div className="p-3 services-detail js-scroll slide-right ">
                                 <div className="p-2 ">
                                     <span>04.</span>
                                 </div>

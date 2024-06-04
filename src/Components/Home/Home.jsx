@@ -17,10 +17,11 @@ function Home() {
 
     return (
         <>
+        
             <section className='home-section'>
                 <Main/>
             </section>
-            <section className='About-us-Section'>
+            <section className='About-us-Section '>
                 <About />
             </section>
             <section className='services-section' id='services'>

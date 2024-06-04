@@ -22,7 +22,7 @@ function Skill() {
                         <div className="col-lg-8 col-sm-6 col-md-12">
                             <div className="row">
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section">
+                                    <div className="language-section js-scroll slide-left">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/html.png" alt="" />
                                         </div>
@@ -31,7 +31,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section">
+                                    <div className="language-section js-scroll slide-left ">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/css.png" alt="" />
                                         </div>
@@ -40,7 +40,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section">
+                                    <div className="language-section js-scroll slide-right">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/bootstrap.png" alt="" />
                                         </div>
@@ -49,7 +49,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section mt-0">
+                                    <div className="language-section mt-0 js-scroll slide-right">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/js.png" alt="" />
                                         </div>
@@ -58,7 +58,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section mt-3">
+                                    <div className="language-section mt-3 js-scroll slide-left">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/jquery.png" alt="" />
                                         </div>
@@ -67,7 +67,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section mt-3">
+                                    <div className="language-section mt-3 js-scroll slide-left">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/react.png" alt="" />
                                         </div>
@@ -76,7 +76,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section mt-3">
+                                    <div className="language-section mt-3 js-scroll slide-right">
                                         <div className='d-flex justify-content-center'>
                                             <img src="/assets/img/php.png" style={{ width: '67px' }} alt="" />
                                         </div>
@@ -85,7 +85,7 @@ function Skill() {
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-                                    <div className="language-section mt-3">
+                                    <div className="language-section mt-3 js-scroll slide-right">
                                         <div className='d-flex justify-content-center'>
                                             <img className='figma-img' style={{ width: '32px' }} src="/assets/img/figma.png" alt="" />
                                         </div>

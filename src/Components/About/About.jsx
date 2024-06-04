@@ -7,7 +7,7 @@ import { FaCheck } from "react-icons/fa";
 function About() {
   return (
     <>
-      <div id="about" className="container">
+      <div id="about" className="container fade-in-bottom js-scroll">
         <div className="about-me ">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-13">
