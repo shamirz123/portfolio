@@ -43,7 +43,6 @@ function Project() {
 
     window.addEventListener("scroll", handleScrollAnimation);
 
-    // Cleanup function to remove the event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScrollAnimation);
     };
@@ -103,7 +102,6 @@ function Project() {
             </div>
           </div>
         </section>
-       
       </div>
     </>
   );
