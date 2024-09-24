@@ -4,6 +4,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Navbar() {
   const [isHamburgerActive, setHamburgerActive] = useState(false);
+  console.log("isHamburgerActive",isHamburgerActive)
   const [isVisible, setVisible] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
 
@@ -34,9 +35,11 @@ function Navbar() {
   };
 
   return (
-    <header className={`navbar navbar-header ${hasBackground ? "background" : ""}`}>
+    <header
+      className={`navbar navbar-header ${hasBackground ? "background" : ""}`}
+    >
       <div className="container">
-        <nav >
+        <nav>
           <ScrollLink
             to="home"
             smooth={true}
