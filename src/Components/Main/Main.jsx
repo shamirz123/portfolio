@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { MdNavigateNext } from "react-icons/md";
-import resumePDF from "/assets/img/resume.pdf";
+import resumePDF from "/assets/img/Shamir-rectjs-developer.pdf";
 
 function Main() {
   const [text, setText] = useState("");
@@ -21,7 +21,7 @@ function Main() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumePDF;
-    link.download = "resume.pdf";
+    link.download = "Shamir-rectjs-developer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
