@@ -21,7 +21,7 @@ function Main() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumePDF;
-    link.download = "Shamir-rectjs-developer.pdf";
+    link.download = "shahmeer-zubair-frontend-developer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
