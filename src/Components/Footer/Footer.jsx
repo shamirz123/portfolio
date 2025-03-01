@@ -56,7 +56,7 @@ function Footer() {
                   <span>
                     <MdOutlineMail />
                   </span>
-                  <p className="ml-3">shahmeerzubair299@gmail.com</p>
+                  <p className="ml-3">rajashamir383@gmail.com</p>
                 </div>
                 <div className="d-flex">
                   <span>

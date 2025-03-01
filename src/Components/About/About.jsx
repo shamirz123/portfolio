@@ -74,7 +74,7 @@ function About() {
                         <span>Email Us</span>
                         <br />
                         <a href="mailto:support@gmail.com">
-                          shahmeerzubair299@gmail.com
+                          rajashamir383@gmail.com
                         </a>
                       </div>
                     </div>

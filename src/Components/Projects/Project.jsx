@@ -130,7 +130,7 @@ function Project() {
                   </span>
                 </div>
 
-                <div className="timeline-content">
+                <div className="timeline-content js-scroll slide-left">
                   <h3 className="timeline-title">{exp.title}</h3>
                   <h4 className="timeline-company">{exp.company}</h4>
                   <ul className="timeline-description">
