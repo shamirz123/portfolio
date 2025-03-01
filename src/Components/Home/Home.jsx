@@ -12,6 +12,7 @@ import Footer from "../Footer/Footer";
 import Sociallinks from "../SocialLinks/Sociallinks";
 import Main from "../Main/Main";
 import ProjectGallery from "../ProjectGallery/ProjectGallery";
+import Timeline from "../Experience/Experience";
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
         <Testimonial />
       </section>
       <section className="project-sections" id="projects">
+        {/* <Timeline /> */}
         <Project />
       </section>
       <section className="project-gallery-section" id="projects-gallery">

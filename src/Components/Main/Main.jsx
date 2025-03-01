@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { MdNavigateNext } from "react-icons/md";
-import resumePDF from "/assets/img/Shamir-rectjs-developer.pdf";
+import resumePDF from "/assets/img/shahmeer-zubair-frontend-developer.pdf";
 
 function Main() {
   const [text, setText] = useState("");

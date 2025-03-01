@@ -1,261 +1,124 @@
-import React from "react";
-import "../main.css";
+import React, { useState } from "react";
+import { FaLink } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-function ProjectGallery() {
+const projects = [
+  {
+    id: 1,
+    title: "Wilmart",
+    description:
+      "E-commerce website for selling pharmacy products, providing an easy and convenient way for users to browse and purchase pharmaceutical items online.",
+    imgSrc: "/assets/img/willmart.png",
+    link: "https://www.wilmart.pk/",
+    tags: ["#react", "#javascript", "#php", "#bootstrap"],
+  },
+  {
+    id: 2,
+    title: "Hajj Haramain",
+    description:
+      "Online booking platform that allows users to book their Hajj pilgrimage, view available packages, and get details on travel arrangements, accommodations, and other services related to Hajj.",
+    imgSrc: "/assets/img/hajjharamain.png",
+    link: "https://hajjharamain.com/",
+
+    tags: ["#typescript", "#nextjs", "#php", "#bootstrap"],
+  },
+  {
+    id: 3,
+    title: "Caprieasy.net",
+    description:
+      "A website for booking boat and hotel accommodations in Italy, providing a seamless experience for travelers, including tailored stays and unique waterfront options, to enjoy an unforgettable vacation.",
+    imgSrc: "/assets/img/caprieasy.png",
+    link: "https://react.caprieasy.net/",
+
+    tags: ["#javascript", "#reactjs", "#laravel", "#bootstrap"],
+  },
+  {
+    id: 4,
+    title: "Tripplanner AE",
+    description:
+      "A global online booking platform that allows users to book tours, visas, transport, and other travel services worldwide, offering an easy and convenient way to plan and book trips.",
+    imgSrc: "/assets/img/tripplannerae.png",
+    link: "https://tripplanner.ae/",
+
+    tags: ["#react", "#javascript", "#php", "#bootstrap"],
+  },
+];
+
+const ProjectGallery = () => {
   return (
-    <div className="container">
-      <section className="portfolio-section js-scroll fade-in" id="portfolio">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2>Project Gallery</h2>
-            </div>
-          </div>
-          <ul className="row portfolio-item">
-            <li className="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-              <img
-                src="/assets/img/project-2.png"
-                itemProp="thumbnail"
-                alt="Image description"
-              />
-              <div className="portfolio-overlay">
-                <div className="overlay-content">
-                  <p className="category">Life Standard Furniture</p>
-                  <a
-                    href="https://lifeestandardpk.vercel.app/"
-                    title="View Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-link" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    data-fancybox="item"
-                    title="click to zoom-in"
-                    href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-                    data-size="1200x600"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li className="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
-              <img
-                src="/assets/img/project-3.png"
-                itemProp="thumbnail"
-                alt="Image description"
-              />
-              <div className="portfolio-overlay">
-                <div className="overlay-content">
-                  <p className="category">Portfolio</p>
-                  <a
-                    href="https://shahmir.vercel.app/"
-                    title="View Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-link" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    data-fancybox="item"
-                    title="click to zoom-in"
-                    href="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    data-size="1200x600"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li className="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-              <img
-                src="/assets/img/project-4.png"
-                itemProp="thumbnail"
-                alt="Image description"
-              />
-              <div className="portfolio-overlay">
-                <div className="overlay-content">
-                  <p className="category">Umrah Furas</p>
-                  <a
-                    href="https://v2.umrahfuras.com"
-                    title="View Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-link" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    data-fancybox="item"
-                    title="click to zoom-in"
-                    href="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    data-size="1200x600"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li className="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-              <img
-                src="/assets/img/project-5.png"
-                itemProp="thumbnail"
-                alt="Image description"
-              />
-              <div className="portfolio-overlay">
-                <div className="overlay-content">
-                  <p className="category">Tripplannerpk</p>
-                  <a
-                    href="https://www.tripplannerpk.com/"
-                    title="View Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-link" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    data-fancybox="item"
-                    title="click to zoom-in"
-                    href="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    data-size="1200x600"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li className="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
-              <img
-                src="/assets/img/project-8.png"
-                itemProp="thumbnail"
-                alt="Image description"
-              />
-              <div className="portfolio-overlay">
-                <div className="overlay-content">
-                  <p className="category">Umrah Journey</p>
-                  <a
-                    href="https://www.umrahjourney.co.uk/"
-                    title="View Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-link" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    data-fancybox="item"
-                    title="click to zoom-in"
-                    href="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    data-size="1200x600"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li className="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-              <img
-                src="/assets/img/project-7.jpeg"
-                itemProp="thumbnail"
-                alt="Image description"
-              />
-              <div className="portfolio-overlay">
-                <div className="overlay-content">
-                  <p className="category">Clinta</p>
-                  <a
-                    href="https://builder-v3.clinta.biz/"
-                    title="View Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-link" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    data-fancybox="item"
-                    title="click to zoom-in"
-                    href="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                  >
-                    <div className="magnify-icon">
-                      <p>
-                        <span>
-                          <i className="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <div className="project-gallery">
+      {projects.map((project) => (
+        <HoverCard key={project.id} project={project} />
+      ))}
     </div>
   );
-}
+};
+
+const HoverCard = ({ project }) => {
+  const [rotateX, setRotateX] = useState(0);
+  const [rotateY, setRotateY] = useState(0);
+
+  const handleMouseMove = (e) => {
+    const card = e.currentTarget;
+    const { left, top, width, height } = card.getBoundingClientRect();
+    const x = (e.clientX - left) / width - 0.5;
+    const y = (e.clientY - top) / height - 0.5;
+
+    setRotateX(y * -100); // Faster rotation on Y-axis
+    setRotateY(x * 100); // Faster rotation on X-axis
+  };
+
+  const handleMouseLeave = () => {
+    setRotateX(0);
+    setRotateY(0);
+  };
+
+  return (
+    <>
+      <section className="portfolio-section js-scroll fade-in" id="portfolio">
+        <div
+          className="project-card"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          style={{
+            transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+          }}
+        >
+          <div className="project-image-container">
+            <img
+              src={project.imgSrc}
+              alt={project.title}
+              className="project-image"
+            />
+            <div className="card-img-hover">
+              <Link to={project?.link}>
+                <div className="icon-wrapper">
+                  <FaLink />
+
+                  {/* <img
+              src="/assets/link-lXUlutFC.png"
+              alt="github"
+              className="icon"
+            /> */}
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="project-content">
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+          </div>
+          <div className="project-tags">
+            {project.tags.map((tag, index) => (
+              <span key={index} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default ProjectGallery;
