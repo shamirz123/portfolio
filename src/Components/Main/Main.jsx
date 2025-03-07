@@ -21,7 +21,7 @@ function Main() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumePDF;
-    link.download = "shahmeer-zubair-frontend-developer.pdf";
+    link.download = "shahmeer-mern-dev-resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -45,28 +45,29 @@ function Main() {
                 </div>
                 <TypeAnimation
                   sequence={[
-                    "I am a front-end developer...",
+                    "I am a MERN Stack Developer...",
                     1000,
-                    "I am a Reactjs developer...",
+                    "I build scalable web applications...",
                     1000,
-                    "I am a front-end designer...",
+                    "I am a React & Next.js expert...",
                     1000,
-                    "I am a UI/UX designer...",
+                    "I craft seamless user experiences...",
+                    1000,
+                    "I solve complex problems with clean code...",
                     1000,
                   ]}
                   wrapper="span"
                   speed={50}
-                  // style={{ fontSize: '2em', display: 'inline-block' }}
                   repeat={Infinity}
                   className="Animation-text-wrapper"
                 />
 
                 <p>
-                  As a web developer, I am driven by a passion for creating
-                  innovative and user-friendly digital experiences. With a keen
-                  eye for detail and a commitment to excellence, I transform
-                  ideas into well-crafted, responsive websites that leave a
-                  lasting impression.
+                  As a MERN Stack Developer, I am passionate about building
+                  dynamic, scalable, and user-friendly web applications. With a
+                  strong focus on performance, responsiveness, and clean code, I
+                  transform ideas into seamless digital experiences that leave a
+                  lasting impact.
                 </p>
 
                 <div className="d-flex hireme-btn">

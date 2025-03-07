@@ -23,9 +23,9 @@ function Home() {
       <section className="About-us-Section">
         <About />
       </section>
-      <section className="services-section" id="services">
+      {/* <section className="services-section" id="services">
         <Services />
-      </section>
+      </section> */}
       <section className="skill-section" id="skills">
         <Skill />
       </section>

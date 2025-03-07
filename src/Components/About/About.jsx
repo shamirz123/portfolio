@@ -14,13 +14,15 @@ function About() {
               <div className="p-4">
                 <h3>About Me</h3>
                 <h1>
-                  Crafting Effective Solutions for Digital Challenges in{" "}
-                  <span>Web Development</span>{" "}
+                  Building Scalable & Dynamic Solutions with{" "}
+                  <span>MERN Stack Development</span>
                 </h1>
                 <p>
-                  Passionate web developer with a keen eye for detail.
-                  Transforming ideas into captivating digital experiences. Let's
-                  create something extraordinary together.
+                  Passionate MERN Stack Developer with a strong foundation in{" "}
+                  <b>MongoDB, Express.js, React.js, and Node.js</b>. I
+                  specialize in creating high-performance, scalable, and
+                  user-friendly web applications that solve real-world
+                  challenges. Let's build something extraordinary together!
                 </p>
 
                 <div className="d-flex flex-row gap-3 about-exp">
@@ -30,7 +32,7 @@ function About() {
                     </span>
                   </div>
                   <div className="p-2">
-                    <p className="m-0">Web Development</p>
+                    <p className="m-0">Full-Stack Web Development</p>
                   </div>
                   <div className="p-2">
                     {" "}
@@ -39,7 +41,7 @@ function About() {
                     </span>
                   </div>
                   <div className="p-2">
-                    <p className="m-0">Detail-Oriented:</p>
+                    <p className="m-0">Performance Optimization</p>
                   </div>
                 </div>
                 <div className="d-flex flex-row gap-3 about-exp">
@@ -49,7 +51,7 @@ function About() {
                     </span>
                   </div>
                   <div className="p-2">
-                    <p className="m-0">Client Satisfaction</p>
+                    <p className="m-0">API Development & Integration</p>
                   </div>
                   <div className="p-2">
                     {" "}
@@ -58,7 +60,7 @@ function About() {
                     </span>
                   </div>
                   <div className="p-2">
-                    <p className="m-0">Product Design:</p>
+                    <p className="m-0">Scalable Architecture</p>
                   </div>
                 </div>
                 <div className="contact-me-detil">

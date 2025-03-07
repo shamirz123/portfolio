@@ -76,44 +76,46 @@ const HoverCard = ({ project }) => {
   return (
     <>
       <section className="portfolio-section js-scroll fade-in" id="portfolio">
-        <div
-          className="project-card"
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          style={{
-            transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-          }}
-        >
-          <div className="project-image-container">
-            <img
-              src={project.imgSrc}
-              alt={project.title}
-              className="project-image"
-            />
-            <div className="card-img-hover">
-              <Link to={project?.link}>
-                <div className="icon-wrapper">
-                  <FaLink />
+        <div className="container">
+          <div
+            className="project-card"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+            }}
+          >
+            <div className="project-image-container">
+              <img
+                src={project.imgSrc}
+                alt={project.title}
+                className="project-image"
+              />
+              <div className="card-img-hover">
+                <Link to={project?.link}>
+                  <div className="icon-wrapper">
+                    <FaLink />
 
-                  {/* <img
+                    {/* <img
               src="/assets/link-lXUlutFC.png"
               alt="github"
               className="icon"
             /> */}
-                </div>
-              </Link>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="project-content">
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-          </div>
-          <div className="project-tags">
-            {project.tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
-            ))}
+            <div className="project-content">
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+            </div>
+            <div className="project-tags">
+              {project.tags.map((tag, index) => (
+                <span key={index} className="tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

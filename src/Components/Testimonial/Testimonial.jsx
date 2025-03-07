@@ -9,16 +9,15 @@ function Testimonial() {
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12">
             <div className="p-4 mt-5 client-testimonial">
-              <p>Clients Testimonials</p>
+              <p className="text-lg font-semibold">What My Clients Say</p>
               <h1>
-                I’ve <CountUp end={500} />+ Clients{" "}
+                Proudly Served <CountUp end={100} /><span>+ Clients</span>
               </h1>
-              <h1>
-                <span>Feedback</span>
-              </h1>
+
               <p>
-                Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-                inventore veritatis
+                "Delivering high-quality, scalable web solutions that exceed
+                expectations. Here’s what my clients have to say about working
+                with me."
               </p>
             </div>
           </div>
